@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A1642341A765F000096E0E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1642331A765F000096E0E6 /* AppDelegate.swift */; };
+		0A1642361A765F000096E0E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1642351A765F000096E0E6 /* ViewController.swift */; };
+		0A1642391A765F000096E0E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1642371A765F000096E0E6 /* Main.storyboard */; };
+		0A16423B1A765F000096E0E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A16423A1A765F000096E0E6 /* Images.xcassets */; };
+		0A16423E1A765F000096E0E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A16423C1A765F000096E0E6 /* LaunchScreen.xib */; };
+		0A16424A1A765F000096E0E6 /* HTAutocompleteTextFieldSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1642491A765F000096E0E6 /* HTAutocompleteTextFieldSwiftTests.swift */; };
+		0A1642551A7661720096E0E6 /* HTAutocompleteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1642541A7661720096E0E6 /* HTAutocompleteTextField.swift */; };
+		0A1642581A766AC70096E0E6 /* autocompleteButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A1642561A766AC70096E0E6 /* autocompleteButton@2x.png */; };
+		0A1642591A766AC70096E0E6 /* autocompleteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A1642571A766AC70096E0E6 /* autocompleteButton.png */; };
+		0A16425B1A7685870096E0E6 /* HTAutocompleteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A16425A1A7685870096E0E6 /* HTAutocompleteManager.swift */; };
+		0A16425D1A7692450096E0E6 /* HTEmailAutocompleteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A16425C1A7692450096E0E6 /* HTEmailAutocompleteTextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A1642441A765F000096E0E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A1642261A765F000096E0E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A16422D1A765F000096E0E6;
+			remoteInfo = HTAutocompleteTextFieldSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A16422E1A765F000096E0E6 /* HTAutocompleteTextFieldSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTAutocompleteTextFieldSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A1642321A765F000096E0E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A1642331A765F000096E0E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A1642351A765F000096E0E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0A1642381A765F000096E0E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A16423A1A765F000096E0E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0A16423D1A765F000096E0E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0A1642431A765F000096E0E6 /* HTAutocompleteTextFieldSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTAutocompleteTextFieldSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A1642481A765F000096E0E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A1642491A765F000096E0E6 /* HTAutocompleteTextFieldSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTAutocompleteTextFieldSwiftTests.swift; sourceTree = "<group>"; };
+		0A1642541A7661720096E0E6 /* HTAutocompleteTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTAutocompleteTextField.swift; sourceTree = "<group>"; };
+		0A1642561A766AC70096E0E6 /* autocompleteButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "autocompleteButton@2x.png"; sourceTree = "<group>"; };
+		0A1642571A766AC70096E0E6 /* autocompleteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = autocompleteButton.png; sourceTree = "<group>"; };
+		0A16425A1A7685870096E0E6 /* HTAutocompleteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTAutocompleteManager.swift; sourceTree = "<group>"; };
+		0A16425C1A7692450096E0E6 /* HTEmailAutocompleteTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTEmailAutocompleteTextField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A16422B1A765F000096E0E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A1642401A765F000096E0E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A1642251A765F000096E0E6 = {
+			isa = PBXGroup;
+			children = (
+				0A1642301A765F000096E0E6 /* HTAutocompleteTextFieldSwift */,
+				0A1642461A765F000096E0E6 /* HTAutocompleteTextFieldSwiftTests */,
+				0A16422F1A765F000096E0E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A16422F1A765F000096E0E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A16422E1A765F000096E0E6 /* HTAutocompleteTextFieldSwift.app */,
+				0A1642431A765F000096E0E6 /* HTAutocompleteTextFieldSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A1642301A765F000096E0E6 /* HTAutocompleteTextFieldSwift */ = {
+			isa = PBXGroup;
+			children = (
+				0A1642531A76613D0096E0E6 /* View */,
+				0A1642331A765F000096E0E6 /* AppDelegate.swift */,
+				0A1642351A765F000096E0E6 /* ViewController.swift */,
+				0A1642371A765F000096E0E6 /* Main.storyboard */,
+				0A16423A1A765F000096E0E6 /* Images.xcassets */,
+				0A1642561A766AC70096E0E6 /* autocompleteButton@2x.png */,
+				0A1642571A766AC70096E0E6 /* autocompleteButton.png */,
+				0A16423C1A765F000096E0E6 /* LaunchScreen.xib */,
+				0A1642311A765F000096E0E6 /* Supporting Files */,
+			);
+			path = HTAutocompleteTextFieldSwift;
+			sourceTree = "<group>";
+		};
+		0A1642311A765F000096E0E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A1642321A765F000096E0E6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A1642461A765F000096E0E6 /* HTAutocompleteTextFieldSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A1642491A765F000096E0E6 /* HTAutocompleteTextFieldSwiftTests.swift */,
+				0A1642471A765F000096E0E6 /* Supporting Files */,
+			);
+			path = HTAutocompleteTextFieldSwiftTests;
+			sourceTree = "<group>";
+		};
+		0A1642471A765F000096E0E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A1642481A765F000096E0E6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A1642531A76613D0096E0E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A1642541A7661720096E0E6 /* HTAutocompleteTextField.swift */,
+				0A16425A1A7685870096E0E6 /* HTAutocompleteManager.swift */,
+				0A16425C1A7692450096E0E6 /* HTEmailAutocompleteTextField.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A16422D1A765F000096E0E6 /* HTAutocompleteTextFieldSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A16424D1A765F000096E0E6 /* Build configuration list for PBXNativeTarget "HTAutocompleteTextFieldSwift" */;
+			buildPhases = (
+				0A16422A1A765F000096E0E6 /* Sources */,
+				0A16422B1A765F000096E0E6 /* Frameworks */,
+				0A16422C1A765F000096E0E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTAutocompleteTextFieldSwift;
+			productName = HTAutocompleteTextFieldSwift;
+			productReference = 0A16422E1A765F000096E0E6 /* HTAutocompleteTextFieldSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A1642421A765F000096E0E6 /* HTAutocompleteTextFieldSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A1642501A765F000096E0E6 /* Build configuration list for PBXNativeTarget "HTAutocompleteTextFieldSwiftTests" */;
+			buildPhases = (
+				0A16423F1A765F000096E0E6 /* Sources */,
+				0A1642401A765F000096E0E6 /* Frameworks */,
+				0A1642411A765F000096E0E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A1642451A765F000096E0E6 /* PBXTargetDependency */,
+			);
+			name = HTAutocompleteTextFieldSwiftTests;
+			productName = HTAutocompleteTextFieldSwiftTests;
+			productReference = 0A1642431A765F000096E0E6 /* HTAutocompleteTextFieldSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A1642261A765F000096E0E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = kevin;
+				TargetAttributes = {
+					0A16422D1A765F000096E0E6 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					0A1642421A765F000096E0E6 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 0A16422D1A765F000096E0E6;
+					};
+				};
+			};
+			buildConfigurationList = 0A1642291A765F000096E0E6 /* Build configuration list for PBXProject "HTAutocompleteTextFieldSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A1642251A765F000096E0E6;
+			productRefGroup = 0A16422F1A765F000096E0E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A16422D1A765F000096E0E6 /* HTAutocompleteTextFieldSwift */,
+				0A1642421A765F000096E0E6 /* HTAutocompleteTextFieldSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A16422C1A765F000096E0E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A1642581A766AC70096E0E6 /* autocompleteButton@2x.png in Resources */,
+				0A1642391A765F000096E0E6 /* Main.storyboard in Resources */,
+				0A16423E1A765F000096E0E6 /* LaunchScreen.xib in Resources */,
+				0A1642591A766AC70096E0E6 /* autocompleteButton.png in Resources */,
+				0A16423B1A765F000096E0E6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A1642411A765F000096E0E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A16422A1A765F000096E0E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A1642551A7661720096E0E6 /* HTAutocompleteTextField.swift in Sources */,
+				0A1642361A765F000096E0E6 /* ViewController.swift in Sources */,
+				0A16425D1A7692450096E0E6 /* HTEmailAutocompleteTextField.swift in Sources */,
+				0A1642341A765F000096E0E6 /* AppDelegate.swift in Sources */,
+				0A16425B1A7685870096E0E6 /* HTAutocompleteManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A16423F1A765F000096E0E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A16424A1A765F000096E0E6 /* HTAutocompleteTextFieldSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A1642451A765F000096E0E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A16422D1A765F000096E0E6 /* HTAutocompleteTextFieldSwift */;
+			targetProxy = 0A1642441A765F000096E0E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A1642371A765F000096E0E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A1642381A765F000096E0E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A16423C1A765F000096E0E6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A16423D1A765F000096E0E6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A16424B1A765F000096E0E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A16424C1A765F000096E0E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A16424E1A765F000096E0E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HTAutocompleteTextFieldSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A16424F1A765F000096E0E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HTAutocompleteTextFieldSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0A1642511A765F000096E0E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HTAutocompleteTextFieldSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HTAutocompleteTextFieldSwift.app/HTAutocompleteTextFieldSwift";
+			};
+			name = Debug;
+		};
+		0A1642521A765F000096E0E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HTAutocompleteTextFieldSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HTAutocompleteTextFieldSwift.app/HTAutocompleteTextFieldSwift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A1642291A765F000096E0E6 /* Build configuration list for PBXProject "HTAutocompleteTextFieldSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A16424B1A765F000096E0E6 /* Debug */,
+				0A16424C1A765F000096E0E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A16424D1A765F000096E0E6 /* Build configuration list for PBXNativeTarget "HTAutocompleteTextFieldSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A16424E1A765F000096E0E6 /* Debug */,
+				0A16424F1A765F000096E0E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0A1642501A765F000096E0E6 /* Build configuration list for PBXNativeTarget "HTAutocompleteTextFieldSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A1642511A765F000096E0E6 /* Debug */,
+				0A1642521A765F000096E0E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A1642261A765F000096E0E6 /* Project object */;
+}

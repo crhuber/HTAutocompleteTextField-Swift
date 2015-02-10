@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>65B78F90-FE6E-4D0E-8FE2-6794DB0948F6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HTAutocompleteTextFieldSwift</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9B803F2714568ACB3335F5DB9362B57C88645891</key>
+		<string>https://github.com/crhuber/HTAutocompleteTextField-Swift.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HTAutocompleteTextFieldSwift.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9B803F2714568ACB3335F5DB9362B57C88645891</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/crhuber/HTAutocompleteTextField-Swift.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9B803F2714568ACB3335F5DB9362B57C88645891</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9B803F2714568ACB3335F5DB9362B57C88645891</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HTAutocompleteTextFieldSwift</string>
+		</dict>
+	</array>
+</dict>
+</plist>
