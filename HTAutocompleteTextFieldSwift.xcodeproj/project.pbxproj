@@ -17,7 +17,7 @@
 		0A1642581A766AC70096E0E6 /* autocompleteButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A1642561A766AC70096E0E6 /* autocompleteButton@2x.png */; };
 		0A1642591A766AC70096E0E6 /* autocompleteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A1642571A766AC70096E0E6 /* autocompleteButton.png */; };
 		0A16425B1A7685870096E0E6 /* HTAutocompleteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A16425A1A7685870096E0E6 /* HTAutocompleteManager.swift */; };
-		0A16425D1A7692450096E0E6 /* HTEmailAutocompleteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A16425C1A7692450096E0E6 /* HTEmailAutocompleteTextField.swift */; };
+		C94A35171C07BD1400CC8538 /* HTEmailAutocompleteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94A35161C07BD1400CC8538 /* HTEmailAutocompleteTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,7 @@
 		0A1642561A766AC70096E0E6 /* autocompleteButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "autocompleteButton@2x.png"; sourceTree = "<group>"; };
 		0A1642571A766AC70096E0E6 /* autocompleteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = autocompleteButton.png; sourceTree = "<group>"; };
 		0A16425A1A7685870096E0E6 /* HTAutocompleteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTAutocompleteManager.swift; sourceTree = "<group>"; };
-		0A16425C1A7692450096E0E6 /* HTEmailAutocompleteTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTEmailAutocompleteTextField.swift; sourceTree = "<group>"; };
+		C94A35161C07BD1400CC8538 /* HTEmailAutocompleteTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTEmailAutocompleteTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,9 +128,9 @@
 		0A1642531A76613D0096E0E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C94A35161C07BD1400CC8538 /* HTEmailAutocompleteTextField.swift */,
 				0A1642541A7661720096E0E6 /* HTAutocompleteTextField.swift */,
 				0A16425A1A7685870096E0E6 /* HTAutocompleteManager.swift */,
-				0A16425C1A7692450096E0E6 /* HTEmailAutocompleteTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -179,7 +179,8 @@
 		0A1642261A765F000096E0E6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = kevin;
 				TargetAttributes = {
 					0A16422D1A765F000096E0E6 = {
@@ -239,7 +240,7 @@
 			files = (
 				0A1642551A7661720096E0E6 /* HTAutocompleteTextField.swift in Sources */,
 				0A1642361A765F000096E0E6 /* ViewController.swift in Sources */,
-				0A16425D1A7692450096E0E6 /* HTEmailAutocompleteTextField.swift in Sources */,
+				C94A35171C07BD1400CC8538 /* HTEmailAutocompleteTextField.swift in Sources */,
 				0A1642341A765F000096E0E6 /* AppDelegate.swift in Sources */,
 				0A16425B1A7685870096E0E6 /* HTAutocompleteManager.swift in Sources */,
 			);
@@ -303,6 +304,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -366,6 +368,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HTAutocompleteTextFieldSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -376,6 +379,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HTAutocompleteTextFieldSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -394,6 +398,7 @@
 				);
 				INFOPLIST_FILE = HTAutocompleteTextFieldSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HTAutocompleteTextFieldSwift.app/HTAutocompleteTextFieldSwift";
 			};
@@ -409,6 +414,7 @@
 				);
 				INFOPLIST_FILE = HTAutocompleteTextFieldSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kevin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HTAutocompleteTextFieldSwift.app/HTAutocompleteTextFieldSwift";
 			};
@@ -433,6 +439,7 @@
 				0A16424F1A765F000096E0E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A1642501A765F000096E0E6 /* Build configuration list for PBXNativeTarget "HTAutocompleteTextFieldSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +448,7 @@
 				0A1642521A765F000096E0E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -51,7 +51,7 @@ class HTEmailAutocompleteTextField: HTAutocompleteTextField, HTAutocompleteDataS
         
         if (textComponents.count > 1) {
             // If no domain is entered, use the first domain in the list
-            if (countElements(textComponents[1]) == 0) {
+            if (textComponents[1].characters.count == 0) {
                 return emailDomains[0]
             }
             var textAfterAtSign = textComponents[1]
@@ -61,10 +61,10 @@ class HTEmailAutocompleteTextField: HTAutocompleteTextField, HTAutocompleteDataS
                 stringToLookFor = textAfterAtSign.lowercaseString
             }
             else {
-                stringToLookFor = textAfterAtSign as NSString
+                stringToLookFor = textAfterAtSign as String
                 
             }
-            for (index, stringFromReference) in enumerate(emailDomains) {
+            for (index, stringFromReference) in emailDomains.enumerate() {
                 var stringToCompare:NSString
                 if (ignoreCase) {
                     stringToCompare = stringFromReference.lowercaseString
@@ -74,7 +74,7 @@ class HTEmailAutocompleteTextField: HTAutocompleteTextField, HTAutocompleteDataS
                 }
                 if (stringToCompare.hasPrefix(stringToLookFor!))
                 {
-                    let index = advance(stringFromReference.startIndex, countElements(stringToLookFor!))
+                    let index = stringFromReference.startIndex.advancedBy((stringToLookFor!.characters.count))
                     return stringFromReference.substringFromIndex(index)
                 }
                 
