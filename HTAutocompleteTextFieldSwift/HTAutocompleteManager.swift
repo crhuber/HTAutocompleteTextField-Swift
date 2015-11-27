@@ -205,8 +205,9 @@ class HTAutocompleteManager: NSObject, HTAutocompleteDataSource {
             }
             
             if (textComponents.count > 1) {
+                let str : String = textComponents[1]
                 // If no domain is entered, use the first domain in the list
-                if (countElements(textComponents[1]) == 0) {
+                if (str.characters.count == 0) {
                     return autocompleteArray[0]
                 }
                 var textAfterAtSign = textComponents[1]
@@ -216,10 +217,10 @@ class HTAutocompleteManager: NSObject, HTAutocompleteDataSource {
                     stringToLookFor = textAfterAtSign.lowercaseString
                 }
                 else {
-                    stringToLookFor = textAfterAtSign as NSString
+                    stringToLookFor = textAfterAtSign as String
                     
                 }
-                for (index, stringFromReference) in enumerate(autocompleteArray) {
+                for (index, stringFromReference) in autocompleteArray.enumerate() {
                     var stringToCompare:NSString
                     if (ignoreCase) {
                         stringToCompare = stringFromReference.lowercaseString
@@ -229,7 +230,7 @@ class HTAutocompleteManager: NSObject, HTAutocompleteDataSource {
                     }
                     if (stringToCompare.hasPrefix(stringToLookFor!))
                     {
-                        let index = advance(stringFromReference.startIndex, countElements(stringToLookFor!))
+                        let index = stringFromReference.startIndex.advancedBy((stringToLookFor!.characters.count))
                         return stringFromReference.substringFromIndex(index)
                     }
                     
@@ -277,7 +278,7 @@ class HTAutocompleteManager: NSObject, HTAutocompleteDataSource {
             {
                 stringToLookFor = prefixLastComponent
             }
-            for (index, stringFromReference) in enumerate(colorAutocompleteArray)
+            for (index, stringFromReference) in colorAutocompleteArray.enumerate()
             {
                 var stringToCompare:String
                 if (ignoreCase)
@@ -290,7 +291,7 @@ class HTAutocompleteManager: NSObject, HTAutocompleteDataSource {
                 }
                 
                 if (stringToCompare.hasPrefix(stringToLookFor)) {
-                    let index = advance(stringFromReference.startIndex, countElements(stringToLookFor))
+                    let index = stringFromReference.startIndex.advancedBy((stringToLookFor.characters.count))
                     return stringFromReference.substringFromIndex(index)
                 }
                 

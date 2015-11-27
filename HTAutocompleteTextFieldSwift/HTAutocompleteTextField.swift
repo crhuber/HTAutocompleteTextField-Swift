@@ -73,7 +73,7 @@ class HTAutocompleteTextField: UITextField{
     }
     
     required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        super.init(coder: aDecoder)!
         correctionNew = 6.0
         self.setupAutocompleteTextField()
     }
@@ -85,7 +85,7 @@ class HTAutocompleteTextField: UITextField{
         self.autocompleteLabel.backgroundColor = UIColor.clearColor()
         self.autocompleteLabel.textColor = UIColor.lightGrayColor()
         
-        var lineBreakMode: NSLineBreakMode = NSLineBreakMode.ByClipping
+        let lineBreakMode: NSLineBreakMode = NSLineBreakMode.ByClipping
         
         //        if (checkVersion("6.0.0") == 1){
         //            var lineBreakMode: NSLineBreakMode = NSLineBreakMode.ByClipping
@@ -98,7 +98,7 @@ class HTAutocompleteTextField: UITextField{
         self.addSubview(autocompleteLabel)
         self.bringSubviewToFront(autocompleteLabel)
         
-        self.autocompleteButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
+        self.autocompleteButton = UIButton(type: UIButtonType.Custom)
         self.autocompleteButton.addTarget(self, action: "autocompleteText:", forControlEvents: UIControlEvents.TouchUpInside)
         self.autocompleteButton.setImage(UIImage(named: "autocompleteButton"), forState:  UIControlState.Normal)
         self.addSubview(autocompleteButton)
@@ -121,7 +121,7 @@ class HTAutocompleteTextField: UITextField{
         DefaultAutocompleteDataSource = dataSource;
     }
     
-    func setFont(font: UIFont) {
+    func changefont(font: UIFont) {
         super.font = font
         self.autocompleteLabel.font = font
     }
@@ -156,13 +156,13 @@ class HTAutocompleteTextField: UITextField{
     }
     
     // MARK: - Autocomplete Logic
-    func autocompleteRectForBounds(boudns: CGRect) -> CGRect {
+    func autocompleteRectForBounds(bounds: CGRect) -> CGRect {
         var returnRect: CGRect = CGRectZero
         // get bounds for whole text area
         var textRectBounds: CGRect = self.textRectForBounds(self.bounds)
         
         // get rect for actual text
-        var textRange: UITextRange = self.textRangeFromPosition(self.beginningOfDocument, toPosition: self.endOfDocument)
+        var textRange: UITextRange = self.textRangeFromPosition(self.beginningOfDocument, toPosition: self.endOfDocument)!
         var textRect: CGRect = CGRectIntegral(self.firstRectForRange(textRange))
         
         var lineBreakMode: NSLineBreakMode = NSLineBreakMode.ByClipping
@@ -176,8 +176,8 @@ class HTAutocompleteTextField: UITextField{
             var paragraphStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineBreakMode =  lineBreakMode
             
-            var attributes:Dictionary = [NSFontAttributeName:self.font, NSParagraphStyleAttributeName:paragraphStyle]
-            var _text: NSString = self.text as NSString
+            var attributes:Dictionary = [NSFontAttributeName: self.font!, NSParagraphStyleAttributeName:paragraphStyle]
+            var _text: NSString = self.text! as NSString
             
             var prefixTextRect: CGRect = _text.boundingRectWithSize(textRectBounds.size, options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: attributes, context: nil)
             var prefixTextSize: CGSize = prefixTextRect.size
@@ -187,10 +187,10 @@ class HTAutocompleteTextField: UITextField{
             autocompleteTextSize = autocompleteTextRect.size
             
         } else {
-            var _text: NSString = self.text as NSString
+            var _text: NSString = self.text! as NSString
             var paragraphStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineBreakMode =  lineBreakMode
-            var attributes:Dictionary = [NSFontAttributeName:self.font, NSParagraphStyleAttributeName:paragraphStyle]
+            var attributes:Dictionary = [NSFontAttributeName:self.font!, NSParagraphStyleAttributeName:paragraphStyle]
             var prefixTextSize: CGSize = _text.sizeWithAttributes(attributes)
             
             var _autocompleteString = self.autocompleteString as NSString
@@ -222,7 +222,7 @@ class HTAutocompleteTextField: UITextField{
         return false
     }
     func updateAutocompleteLabel() {
-        println("autocompleteString is: \(autocompleteString)")
+        print("autocompleteString is: \(autocompleteString)")
         self.autocompleteLabel.text = self.autocompleteString
         self.autocompleteLabel.sizeToFit()
         self.autocompleteLabel.frame = self.autocompleteRectForBounds(self.bounds)
@@ -244,10 +244,10 @@ class HTAutocompleteTextField: UITextField{
                 dataSource = DefaultAutocompleteDataSource!
             }
             
-            autocompleteString  = dataSource?.textField(self, completionForPrefix: self.text, ignoreCase: self.ignoreCase)
+            autocompleteString  = dataSource?.textField(self, completionForPrefix: self.text!, ignoreCase: self.ignoreCase)
             
-            if (countElements(autocompleteString) > 0) {
-                var textLength = countElements(self.text)
+            if (autocompleteString.characters.count > 0) {
+                var textLength = self.text!.characters.count
                 if (textLength == 0 || textLength == 1) {
                     self.updateAutocompleteButtonAnimated(true)
                 }
@@ -259,9 +259,9 @@ class HTAutocompleteTextField: UITextField{
     }
     
     func commitAutocompleteText() -> Bool {
-        var currentText:String = self.text
-        if(countElements(self.autocompleteString) > 0 && self.autocompleteDisabled == false) {
-            self.text = self.text + self.autocompleteString
+        var currentText:String = self.text!
+        if(self.autocompleteString.characters.count > 0 && self.autocompleteDisabled == false) {
+            self.text = self.text! + self.autocompleteString
             self.autocompleteString = "";
             self.updateAutocompleteLabel()
             
@@ -293,7 +293,7 @@ class HTAutocompleteTextField: UITextField{
     
     func frameForAutocompleteButton() -> CGRect {
         var autocompletionButtonRect: CGRect = CGRectZero
-        if (self.clearButtonMode == UITextFieldViewMode.Never || countElements(self.text) == 0) {
+        if (self.clearButtonMode == UITextFieldViewMode.Never || self.text?.characters.count == 0) {
             autocompletionButtonRect = CGRectMake(self.bounds.size.width - kHTAutoCompleteButtonWidth, (self.bounds.size.height/2) - (self.bounds.size.height-8)/2, kHTAutoCompleteButtonWidth, self.bounds.size.height-8);
         }
         else {
@@ -319,7 +319,7 @@ class HTAutocompleteTextField: UITextField{
         if (animated)
         {
             UIView.animateWithDuration(0.15, animations:{
-                var autocompleteStringLength = countElements(self.autocompleteString)
+                var autocompleteStringLength =  self.autocompleteString.characters.count
                 if (autocompleteStringLength>0 && self.showAutocompleteButton)
                 {
                     self.autocompleteButton.alpha = 1
@@ -333,7 +333,7 @@ class HTAutocompleteTextField: UITextField{
         } else
         {
             UIView.animateWithDuration(0.15, animations:{
-                var autocompleteStringLength = countElements(self.autocompleteString)
+                var autocompleteStringLength = self.autocompleteString.characters.count
                 if (autocompleteStringLength>0 && self.showAutocompleteButton)
                 {
                     self.autocompleteButton.alpha = 1;
